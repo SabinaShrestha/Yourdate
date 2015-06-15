@@ -1,0 +1,16 @@
+
+<h1> Edit </h1>
+<%= form_for @house, url: admin_house_path(@house.id) do |f| %>
+  <h5>Square ft: <%= f.text_field(:squareft) %></h5>
+  <h5>Street: <%= f.text_field(:street) %></h5>
+  <h5>City: <%= f.text_field(:city) %></h5>
+  <h5>State: <%= f.text_field(:state) %></h5>
+  <h5>Zip code: <%= f.text_field(:zipcode) %></h5>
+  <h5>Bedrooms: <%= f.text_field(:bedrooms) %></h5>
+  <h5>Bathrooms: <%= f.text_field(:bathrooms) %></h5>
+  <h5>Price: <%= f.text_field(:price) %></h5>
+  <h5>Description: <%= f.text_field(:description) %></h5>
+  <%= f.submit %>
+<% end %>
+
+

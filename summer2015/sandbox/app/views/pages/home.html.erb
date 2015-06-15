@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+  <h1 class="page_header">Welcome, <%= current_user.username %></h1>
+
+  <% if current_user.pro? %>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e-ORhEE9VVg" frameborder="0" allowfullscreen></iframe></br>
+    You mad, pro?
+  <% end %>
+    <p>
+      Membership: <%= current_user.membership %>
+    </p>
+<% else %>
+      <p class="lead">
+        You should login!
+        <a href="<%= login_path %>" class="btn btn-success"> Go here to login</a>
+      </p>
+ 
+<% end %>

@@ -1,0 +1,11 @@
+<%= link_to('Create a new car', new_car_path) %>
+<ul>
+  <% @cars.each do |car| %>
+    <li>
+      <%= link_to(car.name, car_path(car.id)) %>
+      <%= car.company %>
+      <%= link_to('edit this car', edit_car_path(car.id)) %>
+      <%= link_to('delete this car',car_path(car.id), method: :delete) %>
+    </li>
+  <% end %>
+</ul>

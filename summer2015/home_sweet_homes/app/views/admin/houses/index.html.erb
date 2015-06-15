@@ -1,0 +1,23 @@
+<div>
+  <% @houses.each do |house| %>
+  <h5>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h5>
+    <p>squareft: <%= house.squareft %></p>
+    <p>street: <%= house.street %></p>
+    <p>city: <%= house.city %></p>
+    <p>state: <%= house.state %></p>
+    <p>zipcode: <%= house.zipcode %></p>
+    <p>bedrooms: <%= house.bedrooms %></p>
+    <p>bathrooms: <%= house.bathrooms %></p>
+    <p>price: <%= house.price %></p>
+    <p>description: <%= house.description %></p>
+    <%= link_to 'show', admin_house_path(house) %>
+    <%= link_to 'Edit', edit_admin_house_path(house) %>
+
+
+
+  <% end %>
+
+
+</div>
+
+
