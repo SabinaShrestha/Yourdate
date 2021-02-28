@@ -16,8 +16,6 @@
 # Choose:  2 player or against computer
 # Player chooses X or O
 
-
-
 board = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
 
 # a = board[0][0]
