@@ -1,0 +1,34 @@
+ <ul class="nav nav-pills">
+            <% if user_signed_in? %>
+              <!-- <li role="presentation" class="active"> -->
+              <li class="<%= active_for_page('pages#home') %>">
+                <a href="<%= root_path %>">Home</a>
+              </li>
+              <!-- <li role="presentation"> -->
+               <li class="<%= active_for_page('pages#about') %>">
+                <a href="<%= about_path %>"> About Page</a>
+              </li>
+              <!-- <li role="presentation"> -->
+               <li class="<%= active_for_page('pages#contact') %>">
+                <a href="<%= contact_path %>"> Contact Page</a>
+              </li>
+               <li class="<%= active_for_page('cars#index') %>">
+                <a href="<%= cars_path %>"> Cars Page</a>
+              </li>
+              <!-- <li role="presentation"> -->
+              
+               <li class="<%= active_for_page('meals#index') %>">
+                <a href="<%= meals_path %>"> Meals Page</a>
+              </li>
+              <li>
+               <a href="<%= logout_path %>" data-method="delete" class="text-danger">Logout</a>
+              </li>
+              <% else %>
+              <li class="<%= active_for_page('sessions#new') %>">
+                <a href="<%= login_path %>">Login</a>
+              </li>
+              <li class="<%= active_for_page('users#new') %>">
+                <a href="<%= signup_path %>">Signup</a>
+              </li>
+            <% end %>
+          </ul>

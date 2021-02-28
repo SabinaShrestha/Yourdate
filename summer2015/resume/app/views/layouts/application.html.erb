@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <a href='<%= root_path %>'>Home</a>
+    <a href='<%= about_path %>'>About</a>
+    <a href='<%= education_path %>'>Education</a>
+    <a href='<%= experiance_path %>'>Experiance</a>
+    <a href='<%= contact_path %>'>Contact</a>
+  </header> 
+
+<%= yield %>
+
+</body>
+</html>

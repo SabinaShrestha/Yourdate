@@ -1,0 +1,40 @@
+
+def reverse(string)
+  # word = "hi i am sabina"
+  new_word = ""
+  # puts "#{word}"
+  string_length = string.length
+  # puts "#{word_length}"
+  while string_length > 0
+    string_length -= 1
+    new_word << string[string_length]
+  end
+
+  puts new_word
+end
+
+puts reverse("no need to worry")
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# another way to do
+
+#  string = "Hello this is my string."
+
+# def reverse_the_string(string)
+#  loop_end = string.length 
+#  new_string = ''
+#    while loop_end > 0       # Want the loop to keep executing until all the letters of the string have been passed through
+#      loop_end -= 1      # checks off each letter -1 each time it runs through the loop
+#      new_string += string[loop_end]     # Rebuilds the string into a new string with each letter backwards
+#    end
+#    new_string
+# end
+
+# puts reverse_the_string(string)
+
+
+
+
+
+
+

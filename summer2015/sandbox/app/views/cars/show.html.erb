@@ -1,0 +1,15 @@
+
+<h1><%= @car.name %></h1>
+<h1><%= @car.company %></h1>
+<br>
+<% if @car.company.include? 'ford'%>
+  <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgpbZ_uA1z46j45kFK50LCc8JGPbFBCHw2so1KJIRO184IKGl-rw"/>
+  <% elsif @car.company.include? 'toyota' %>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR17Vcm4tD_QO9j1vyMzCa-yP_u7NHqNMm3NREZdeT0xmErS-J0"/>
+  <% elsif @car.company.include? 'chevrolet' %>
+  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt7ZrPa4xf6QbULkx7v01pat7XE4Om8LhyeS0grNgj0BB3FMi8"/>
+  <% end %>
+  
+
+
+

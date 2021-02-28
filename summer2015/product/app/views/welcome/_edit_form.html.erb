@@ -1,0 +1,27 @@
+<h1 class="text-center">Edit</h1>
+<hr>
+<div class="container" align="center">
+<%= form_for(@product) do |f| %>
+  <label>Name</label>
+  <%= f.text_field :name, id: "product_name" %>
+  <br>
+  <label>Base Price</label>
+  <input type="text" class="new_product" id="product_base_price" />
+  <br>
+  <label>Description</label>
+  <input type="text" class="new_product" id="product_description" />
+  <br>
+  <label>Quantity</label>
+  <input type="text" class="new_product" id="quantity_on_hand" />
+  <br>
+  <label>Color</label>
+  <input type="text" class="new_product" id="color" />
+  <br>
+  <label>Weight</label>
+  <input type="text" class="new_product" id="weight" />
+  <br>
+  <button type="button" id="new_button" class="btn btn-primary">Submit</button>
+  
+
+<%end%>
+</div>

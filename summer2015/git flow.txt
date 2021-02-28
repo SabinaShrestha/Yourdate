@@ -1,0 +1,6 @@
+git flow 
+
+when adding a new feature
+
+checkout a new branch
+git checkout -b 

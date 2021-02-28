@@ -1,0 +1,5 @@
+<%= form_for(@car) do |f| %>
+  <p> name: <%= f.text_field(:name) %></p>
+  <p>company: <%= f.text_field(:company) %></p>
+  <p><%= f.submit('Save') %></p>
+<% end %>
